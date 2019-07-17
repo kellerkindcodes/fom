@@ -6,6 +6,7 @@ import codes.kellerkind.exercises.ex23.AbstractPerson;
 import codes.kellerkind.exercises.ex34.InputNumber;
 import codes.kellerkind.exercises.ex36.PrintInputString;
 import codes.kellerkind.exercises.ex38.ListOutput;
+import codes.kellerkind.exercises.ex39.MapOutput;
 import codes.kellerkind.exercises.ex7.HelloWorld;
 import codes.kellerkind.exercises.ex9.StaticTypes;
 
@@ -76,6 +77,12 @@ public class Main {
             @Override
             Exercise init() {
                 return new ListOutput();
+            }
+        },
+        MAP_OUTPUT("MapOutput") {
+            @Override
+            Exercise init() {
+                return new MapOutput();
             }
         };
 
