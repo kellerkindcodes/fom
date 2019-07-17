@@ -1,6 +1,7 @@
 package codes.kellerkind;
 
 import codes.kellerkind.exercises.Exercise;
+import codes.kellerkind.exercises.ex13.Calculate;
 import codes.kellerkind.exercises.ex7.HelloWorld;
 import codes.kellerkind.exercises.ex9.StaticTypes;
 
@@ -28,6 +29,8 @@ public class Main {
         System.out.println("Please provide parameter for the given Exercise that should be executed");
     }
 
+
+
     enum ParamToClassMapping {
         HELLO_WORLD("HelloWorld") {
             @Override
@@ -39,6 +42,12 @@ public class Main {
             @Override
             Exercise init() {
                 return new StaticTypes();
+            }
+        },
+        CALCULATE("Calculate") {
+            @Override
+            Exercise init() {
+                return new Calculate();
             }
         };
 
