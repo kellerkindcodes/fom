@@ -2,6 +2,7 @@ package codes.kellerkind;
 
 import codes.kellerkind.exercises.Exercise;
 import codes.kellerkind.exercises.ex7.HelloWorld;
+import codes.kellerkind.exercises.ex9.StaticTypes;
 
 /**
  * Staring main class.
@@ -29,10 +30,15 @@ public class Main {
 
     enum ParamToClassMapping {
         HELLO_WORLD("HelloWorld") {
-
             @Override
             Exercise init() {
                 return new HelloWorld();
+            }
+        },
+        STATIC_TYPES("StaticTypes") {
+            @Override
+            Exercise init() {
+                return new StaticTypes();
             }
         };
 
