@@ -4,6 +4,7 @@ import codes.kellerkind.exercises.Exercise;
 import codes.kellerkind.exercises.ex13.Calculate;
 import codes.kellerkind.exercises.ex23.AbstractPerson;
 import codes.kellerkind.exercises.ex34.InputNumber;
+import codes.kellerkind.exercises.ex36.PrintInputString;
 import codes.kellerkind.exercises.ex7.HelloWorld;
 import codes.kellerkind.exercises.ex9.StaticTypes;
 
@@ -62,6 +63,12 @@ public class Main {
             @Override
             Exercise init() {
                 return new InputNumber();
+            }
+        },
+        PRINT_INPUT_STRING("PrintInputString") {
+            @Override
+            Exercise init() {
+                return new PrintInputString();
             }
         };
 
