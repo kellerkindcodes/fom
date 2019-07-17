@@ -5,6 +5,7 @@ import codes.kellerkind.exercises.ex13.Calculate;
 import codes.kellerkind.exercises.ex23.AbstractPerson;
 import codes.kellerkind.exercises.ex34.InputNumber;
 import codes.kellerkind.exercises.ex36.PrintInputString;
+import codes.kellerkind.exercises.ex38.ListOutput;
 import codes.kellerkind.exercises.ex7.HelloWorld;
 import codes.kellerkind.exercises.ex9.StaticTypes;
 
@@ -69,6 +70,12 @@ public class Main {
             @Override
             Exercise init() {
                 return new PrintInputString();
+            }
+        },
+        LIST_OUTPUT("ListOutput") {
+            @Override
+            Exercise init() {
+                return new ListOutput();
             }
         };
 
